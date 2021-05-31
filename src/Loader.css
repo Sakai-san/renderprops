@@ -1,0 +1,9 @@
+.Wrapper {
+    border: 2px solid salmon;
+    position: relative;
+}
+
+.Loading {
+    position: absolute;
+    border: 2px solid greenyellow;
+}

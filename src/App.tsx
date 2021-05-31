@@ -1,4 +1,5 @@
 import React from 'react';
+import Loader from './Loader';
 import logo from './logo.svg';
 import './App.css';
 
@@ -19,6 +20,29 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <div style={{ display: 'flex' }}>
+        <Loader>
+          {
+            (onLoad) => <img src='https://miro.medium.com/max/12000/1*mbZ4d3IzTmi46SzfihlJqw.jpeg' onLoad={onLoad} width={400} height={300} />
+          }
+        </Loader>
+        <Loader>
+          {
+            (onLoad) => <img src='https://miro.medium.com/max/12000/1*mbZ4d3IzTmi46SzfihlJqw.jpeg' onLoad={onLoad} width={400} height={300} />
+          }
+        </Loader>
+        <Loader>
+          {
+            (onLoad) => <img src='https://miro.medium.com/max/12000/1*mbZ4d3IzTmi46SzfihlJqw.jpeg' onLoad={onLoad} width={400} height={300} />
+          }
+        </Loader>
+        <Loader>
+          {
+            (onLoad) => <iframe src='https://wikipedia.org' onLoad={onLoad} width={400} height={300} />
+          }
+        </Loader>
+      </div>
     </div>
   );
 }
