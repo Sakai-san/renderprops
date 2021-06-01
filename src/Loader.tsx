@@ -9,9 +9,7 @@ interface LoaderProps {
 const Loader: FunctionComponent<LoaderProps> = ({ children }) => {
     const [isLoading, setIsLoading] = useState(true);
 
-    const onLoad = () => {
-        setIsLoading(false);
-    }
+    const onLoad = () => setIsLoading(false);
 
     return (
         <div className="Wrapper">
