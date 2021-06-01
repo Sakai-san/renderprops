@@ -15,4 +15,4 @@ const WithLoader = <P extends {}>(WrappedComponent: ComponentType<P>) => (props:
   );
 };
 
-export default WithLoader;
+export default WithLoader;  
