@@ -41,6 +41,7 @@ function App() {
           }
         </Loader>
       </div>
+      <span className='MountainLabel' title={'tres jolie montagne'}>ceci est une tres jolie montagne</span>
     </div>
   );
 }
